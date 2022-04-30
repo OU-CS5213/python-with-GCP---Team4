@@ -20,4 +20,10 @@ The bucket will then generate public URLs accordingly as below -
 [Koch Snowflake Low Resolution](https://storage.googleapis.com/team-4/ThirdImage.png)  
 [Koch Snowflake High Resolution](https://storage.googleapis.com/team-4/FourthImage.png)  
 [Tree Brach Fractal Low Resolution](https://storage.googleapis.com/team-4/FifthImage.png)  
-[Tree Brach Fractal High Resolution](https://storage.googleapis.com/team-4/SixthImage.png)  
+[Tree Brach Fractal High Resolution](https://storage.googleapis.com/team-4/SixthImage.png) 
+Now, we select the [Cloud Function](https://console.cloud.google.com/functions) translate and then modify the index.html file in the source to include the public link of the images and then deploy. It takes a few minutes to complete the deployment.  
+
+Now, we direct to the TRIGGERS tab in Cloud Function, and we will find the public link below -  
+**https://us-central1-root-gist-347714.cloudfunctions.net/translate**  
+
+The above page will show the links to access the images of the fractals on the web.  
