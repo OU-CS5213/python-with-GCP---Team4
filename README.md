@@ -1,5 +1,5 @@
 # Python with GCP  
-## Authors:Deepika Mettu, Sanoj Doddapaneni, Divya Sudha Jonnakuti, Prudhvik Yarlagadda 
+## Authors: Deepika Mettu, Sanoj Doddapaneni, Divya Sudha Jonnakuti, Prudhvik Yarlagadda 
 
 *Description*  
  - In this project, we need to use the repository [cloud-nebulous-serverless](https://github.com/googlecodelabs/cloud-nebulous-serverless) and implement 3 fractals from the website - https://tashfeen.org where we need to take 2 different resolutions low and high from the fractals and display it in a public HTML page using *Cloud Function* and *Cloud Run*.  
@@ -7,12 +7,12 @@
 ### Cloud Function -
 Firstly, we need to enable the following API's  *Cloud Shell, Cloud Build and Cloud Function*.
 
-After enabling the required APIs, we enable the cloud shell by providing necessary authorization when prompted. Once the cloud shell is active, we clone the [cloud-nebulous-serverless] (https://github.com/googlecodelabs/cloud-nebulous-serverless) repository using "git clone https://github.com/googlecodelabs/cloud-nebulous-serverless" command to implement the changes to the code.  
+After enabling the required APIs, we enable the cloud shell by providing necessary authorization when prompted. Once the cloud shell is active, we clone the [cloud-nebulous-serverless](https://github.com/googlecodelabs/cloud-nebulous-serverless) repository using **__"git clone https://github.com/googlecodelabs/cloud-nebulous-serverless"__** command to implement the changes to the code.  
 
 Now, we run the command below to change the directory to the python directory -  
-cd cloud-nebulous-serverless/cloud/python
-After we are in the correct directory, which has the python code and templates directory, we run the command below as references to build and deploy the cloud function -  
-gcloud functions deploy translate --runtime python39 --trigger-http --allow-unauthenticated  
+**__cd cloud-nebulous-serverless/cloud/python__**  
+After we are in the correct directory, which has the python code and templates, we run the command below as references to build and deploy the cloud function -  
+**__gcloud functions deploy translate --runtime python39 --trigger-http --allow-unauthenticated __** 
 
 We have successfully deployed a cloud function for the repository [cloud-nebulous-serverless](https://github.com/googlecodelabs/cloud-nebulous-serverless). The command will run the code for the translation given in the repository.  
 
@@ -27,6 +27,7 @@ The bucket will then generate public URLs accordingly as below -
 [Koch Snowflake High Resolution](https://storage.googleapis.com/team-4/FourthImage.png)  
 [Tree Brach Fractal Low Resolution](https://storage.googleapis.com/team-4/FifthImage.png)  
 [Tree Brach Fractal High Resolution](https://storage.googleapis.com/team-4/SixthImage.png)   
+
 Now, we select the [Cloud Function](https://console.cloud.google.com/functions) translate and then modify the index.html file in the source to include the public link of the images and then deploy. It takes a few minutes to complete the deployment.  
 
 Now, we direct to the TRIGGERS tab in Cloud Function, and we will find the public link below -  
@@ -35,10 +36,10 @@ Now, we direct to the TRIGGERS tab in Cloud Function, and we will find the publi
 The above page will show the links to access the images of the fractals on the web.  
 
 ### Cloud Run - 
-Here, we need to enable Cloud Run.  
+Here, we need to enable *Cloud Run API*.  
 First, we have cloned the [cloud-nebulous-serverless](https://github.com/googlecodelabs/cloud-nebulous-serverless) repository to our instance using cloud shell and then modified the index.html file with our code containing the URLs of the fractals.  
 Next, we have deployed the service by using the following command:
-gcloud run deploys translate --source. --allow-unauthenticated --platform managed
+**__ gcloud run deploys translate --source. --allow-unauthenticated --platform managed __**
 When the deployment is complete, we get the 
 Service URL: **https://translate-62lns32szq-uc.a.run.app**
 
