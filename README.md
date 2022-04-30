@@ -7,8 +7,14 @@
 ### Cloud Function -
 Firstly, we need to enable the following API's  *Cloud Shell, Cloud Build and Cloud Function*.
 
-After enabling the required APIs, we enable the cloud shell by providing necessary authorization when prompted. Once the cloud shell is active, we clone the [cloud-nebulous-serverless] repository (https://github.com/googlecodelabs/cloud-nebulous-serverless) using "git clone https://github.com/googlecodelabs/cloud-nebulous-serverless"
-command to implement the changes to the code.  
+After enabling the required APIs, we enable the cloud shell by providing necessary authorization when prompted. Once the cloud shell is active, we clone the [cloud-nebulous-serverless] (https://github.com/googlecodelabs/cloud-nebulous-serverless) repository using "git clone https://github.com/googlecodelabs/cloud-nebulous-serverless" command to implement the changes to the code.  
+
+Now, we run the command below to change the directory to the python directory -  
+cd cloud-nebulous-serverless/cloud/python
+After we are in the correct directory, which has the python code and templates directory, we run the command below as references to build and deploy the cloud function -  
+gcloud functions deploy translate --runtime python39 --trigger-http --allow-unauthenticated  
+
+We have successfully deployed a cloud function for the repository [cloud-nebulous-serverless](https://github.com/googlecodelabs/cloud-nebulous-serverless). The command will run the code for the translation given in the repository.  
 
 Therefore, to implement the three fractals as described in the project, we first need to take screenshots of the three fractals (High and Low resolution) and upload these images to the Cloud Storage by creating a bucket.  
 
