@@ -10,9 +10,9 @@ Firstly, we need to enable the following API's  *Cloud Shell, Cloud Build and Cl
 After enabling the required APIs, we enable the cloud shell by providing necessary authorization when prompted. Once the cloud shell is active, we clone the [cloud-nebulous-serverless](https://github.com/googlecodelabs/cloud-nebulous-serverless) repository using **__"git clone https://github.com/googlecodelabs/cloud-nebulous-serverless"__** command to implement the changes to the code.  
 
 Now, we run the command below to change the directory to the python directory -  
-**__cd cloud-nebulous-serverless/cloud/python__**  
+*cd cloud-nebulous-serverless/cloud/python*  
 After we are in the correct directory, which has the python code and templates, we run the command below as references to build and deploy the cloud function -  
-**__gcloud functions deploy translate --runtime python39 --trigger-http --allow-unauthenticated __** 
+*gcloud functions deploy translate --runtime python39 --trigger-http --allow-unauthenticated*
 
 We have successfully deployed a cloud function for the repository [cloud-nebulous-serverless](https://github.com/googlecodelabs/cloud-nebulous-serverless). The command will run the code for the translation given in the repository.  
 
@@ -38,8 +38,8 @@ The above page will show the links to access the images of the fractals on the w
 ### Cloud Run - 
 Here, we need to enable *Cloud Run API*.  
 First, we have cloned the [cloud-nebulous-serverless](https://github.com/googlecodelabs/cloud-nebulous-serverless) repository to our instance using cloud shell and then modified the index.html file with our code containing the URLs of the fractals.  
-Next, we have deployed the service by using the following command:
-**__ gcloud run deploys translate --source. --allow-unauthenticated --platform managed __**
+Next, we have deployed the service by using the following command:  
+*gcloud run deploys translate --source. --allow-unauthenticated --platform managed*  
 When the deployment is complete, we get the 
 Service URL: **https://translate-62lns32szq-uc.a.run.app**
 
