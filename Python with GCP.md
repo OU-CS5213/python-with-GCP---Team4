@@ -69,12 +69,12 @@ After creating the bucket -
  - Now you can copy the public URL in of the Images in the bucket
 ---
 The bucket will then generate public URLs accordingly as below -
-```[Harter-Heighway Dragon Low Resolution](https://storage.googleapis.com/team-4/FirstImage.png)```
-```[Harter-Heighway Dragon High Resolution](https://storage.googleapis.com/team-4/SecondImage.png)```
-```[Koch Snowflake Low Resolution](https://storage.googleapis.com/team-4/ThirdImage.png)```
-```[Koch Snowflake High Resolution](https://storage.googleapis.com/team-4/FourthImage.png)```
-```[Tree Brach Fractal Low Resolution](https://storage.googleapis.com/team-4/FifthImage.png)```
-```[Tree Brach Fractal High Resolution](https://storage.googleapis.com/team-4/SixthImage.png)```
+```https://storage.googleapis.com/team-4/FirstImage.png```
+```https://storage.googleapis.com/team-4/SecondImage.png```
+```https://storage.googleapis.com/team-4/ThirdImage.png```
+```https://storage.googleapis.com/team-4/FourthImage.png```
+```https://storage.googleapis.com/team-4/FifthImage.png```
+```https://storage.googleapis.com/team-4/SixthImage.png```
 
 ---
 Now, In Cloud Function - 
