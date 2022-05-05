@@ -69,12 +69,12 @@ After creating the bucket -
  - Now you can copy the public URL in of the Images in the bucket
 ---
 The bucket will then generate public URLs accordingly as below -
-```https://storage.googleapis.com/team-4/FirstImage.png```
-```https://storage.googleapis.com/team-4/SecondImage.png```
-```https://storage.googleapis.com/team-4/ThirdImage.png```
-```https://storage.googleapis.com/team-4/FourthImage.png```
-```https://storage.googleapis.com/team-4/FifthImage.png```
-```https://storage.googleapis.com/team-4/SixthImage.png```
+```https://storage.googleapis.com/team-4/FirstImage.png```  
+```https://storage.googleapis.com/team-4/SecondImage.png```  
+```https://storage.googleapis.com/team-4/ThirdImage.png```  
+```https://storage.googleapis.com/team-4/FourthImage.png```  
+```https://storage.googleapis.com/team-4/FifthImage.png```  
+```https://storage.googleapis.com/team-4/SixthImage.png```  
 
 ---
 Now, In Cloud Function - 
@@ -102,7 +102,7 @@ When the deployment is complete, we get the Service URL as below -
 
 # Links: 
 Cloud Function Website:  
-```https://us-central1-root-gist-347714.cloudfunctions.net/translate```
+```https://us-central1-root-gist-347714.cloudfunctions.net/translate```  
 Cloud Run Website:  
 ```https://translate-62lns32szq-uc.a.run.app```
 
