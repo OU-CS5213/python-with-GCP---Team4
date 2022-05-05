@@ -68,7 +68,7 @@ After creating the bucket -
  - We change the access of these images to "allusers" to make the images public
  - Now you can copy the public URL in of the Images in the bucket
 ---
-The bucket will then generate public URLs accordingly as below -
+The bucket will then generate public URLs accordingly as below -  
 ```https://storage.googleapis.com/team-4/FirstImage.png```  
 ```https://storage.googleapis.com/team-4/SecondImage.png```  
 ```https://storage.googleapis.com/team-4/ThirdImage.png```  
@@ -100,14 +100,18 @@ When the deployment is complete, we get the Service URL as below -
 
 ---
 
-# Links: 
+# Links -  
 Cloud Function Website:  
 ```https://us-central1-root-gist-347714.cloudfunctions.net/translate```  
 Cloud Run Website:  
 ```https://translate-62lns32szq-uc.a.run.app```
 
 
-
+# Statis links -  
+Cloud Function Website:  
+```https://34.111.96.147/```  
+Cloud Run Website:  
+```https://34.149.176.202/```
 
 
 
